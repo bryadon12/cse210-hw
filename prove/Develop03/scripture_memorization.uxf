@@ -1,0 +1,32 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>410</x><y>50</y><w>210</w><h>190</h></coordinates><panel_attributes>&lt;&lt;Scripture&gt;&gt;
+
+--
+- scriptureVerse: list&lt;word&gt;
+- scriptureReference: Reference
+--
++ Scripture()
++ Scripture(scriptureVerse, scriptureReference)
++ DisplayScripture()
++ HideWords()
++ ClearScreen()
++ AddScripture()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>100</x><y>330</y><w>210</w><h>190</h></coordinates><panel_attributes>&lt;&lt;Reference&gt;&gt;
+--
+- book: string
+- chapter: int
+- verseStart: int
+- verseEnd: int
+--
++ Reference(book, chapter, verseStart, verseEnd)
++ Reference(String reference)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>410</x><y>330</y><w>210</w><h>190</h></coordinates><panel_attributes>&lt;&lt;Word&gt;&gt;
+
+--
+- letters: String
+- hidden: bool
+
+--
++ Word(letters)
++ makeHidden()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>70</x><y>50</y><w>210</w><h>190</h></coordinates><panel_attributes>&lt;&lt;Program&gt;&gt;
+
+--
++ main(String[] args)
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>500</x><y>230</y><w>30</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;100</additional_attributes></element><element><id>Relation</id><coordinates><x>190</x><y>230</y><w>330</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>310;10;10;100</additional_attributes></element><element><id>Relation</id><coordinates><x>270</x><y>130</y><w>160</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;140;10</additional_attributes></element></diagram>

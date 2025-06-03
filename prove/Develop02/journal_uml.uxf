@@ -1,0 +1,39 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>160</x><y>60</y><w>210</w><h>190</h></coordinates><panel_attributes>&lt;&lt;Program&gt;&gt;
+
+--
+Main()
+ObtainFileName(prompt: string)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>480</x><y>60</y><w>210</w><h>190</h></coordinates><panel_attributes>&lt;&lt;Journal&gt;&gt;
+
+--
+Entries:List&lt;Entries&gt;
+--
+addEntry(entry: JournalEntry): void
+writeToFile(filename:strine): void
+readFromFile(filename:String)
+display()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>160</x><y>320</y><w>210</w><h>190</h></coordinates><panel_attributes>&lt;&lt;JournalEntry&gt;&gt;
+
+--
+Date:String
+response: string
+Prompt: List&lt;String&gt;
+--
+Display(): void
+EntryToString():void
+CreateEntryWithPrompt(prompt: String)
+CreateEntryWithData(date:string, prompt:string, response: string)
+NextQuestion(): string
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>480</x><y>320</y><w>210</w><h>190</h></coordinates><panel_attributes>&lt;&lt;Menu&gt;&gt;
+
+--
+Journal: Journal
+title: string
+description: string
+menueItem: string
+--
+ReadFile()
+SaveFile()
+MakeEntry()
+DisplayEntries()
+--
+</panel_attributes><additional_attributes></additional_attributes></element></diagram>
